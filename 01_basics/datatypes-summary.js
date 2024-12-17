@@ -35,3 +35,33 @@ const myFunction = function(){
 } // typeof returns as object function
 
 console.log(typeof(myFunction))
+
+
+// +++++++++++++++++++++++++++
+//Memory
+
+// Stack ( primitive ),  Heap(Non-Primitive)
+
+//stack example
+let myName = "Honey"
+let anotherName = myName //here it creates a copy of original
+
+anotherName = "Aryan"
+
+console.log(myName); //gives honey
+console.log(anotherName); // gives Aryan as copied version is changed
+
+// heap example
+//check for object
+let user = {
+    email: "xyz.com",
+    upi: "abc",
+
+}
+
+let user2 = user
+
+user2.email =  "aryan@google.com"
+
+console.log(user.email);
+console.log(user2.email);
