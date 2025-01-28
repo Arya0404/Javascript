@@ -6,9 +6,11 @@ html {
     display: block;
   }
   .canvas {
-    margin: 100px auto 100px;
+    margin: 200px auto;
     width: 80%;
     text-align: center;
+    border: 4px dashed black;
+    background-color: coral;
   }
   
   .button {
@@ -30,4 +32,7 @@ html {
   }
   #yellow {
     background: yellow;
+  }
+  #purple{
+    background: purple;
   }
